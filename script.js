@@ -139,8 +139,9 @@ function answerNoToQuestion() {
      const currentImage = imageMap[noClickCount % imageMap.length];
 
     // Mengacak posisi tombol "Tidak"
-    const randomTop = Math.random() * 10; // Atur posisi vertikal acak (30% untuk batas atas)
-    const randomLeft = Math.random() * 10; // Atur posisi horizontal acak (30% untuk batas kiri)
+    const randomTop = Math.random() * 25; // Atur posisi vertikal acak (30% untuk batas atas)
+    const randomLeft = Math.random() * 40; // Atur posisi horizontal acak (30% untuk batas kiri)
+    const randomRight = Math.random() * 40;
 
     // Tampilkan tampilan dengan gambar yang diperbarui dan tombol "Tidak" berpindah
     const finalQuestionBox = document.querySelector('.blur-box');
@@ -194,8 +195,9 @@ function answerNo() {
      const currentImage = imageMap[noClickCount % imageMap.length];
 
     // Mengacak posisi tombol "Tidak"
-    const randomTop = Math.random() * 10; // Atur posisi vertikal acak (30% untuk batas atas)
-    const randomLeft = Math.random() * 10; // Atur posisi horizontal acak (30% untuk batas kiri)
+    const randomTop = Math.random() * 25; // Atur posisi vertikal acak (30% untuk batas atas)
+    const randomLeft = Math.random() * 40; // Atur posisi horizontal acak (30% untuk batas kiri)
+    const randomRight = Math.random() * 40;
 
     // Tampilkan tampilan dengan gambar yang diperbarui dan tombol "Tidak" berpindah
     const finalQuestionBox = document.querySelector('.blur-box');
