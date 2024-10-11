@@ -1,4 +1,14 @@
 let noClickCount = 0; // Hitung jumlah klik "Tidak"
+window.addEventListener('load', () => {
+    const audio = document.querySelector('audio');
+    audio.play().catch(() => {
+        // Jika autoplay diblokir, tambahkan event listener untuk memutar audio setelah interaksi
+        document.body.addEventListener('click', () => {
+            audio.play();
+        });
+    });
+});
+
 
 function showName() {
     const name = document.getElementById('partnerName').value;
